@@ -100,9 +100,8 @@ L’attività si articola in quattro componenti principali:
 ### 📎 Materiali di supporto
 
 - 📄 `Capitolato Tecnico.pdf` – documento ufficiale della commessa  
-- 🎞️ *Playlist video tutorial* (Colab, QGIS, scrittura tecnica) → [link da aggiungere]  
 - 📘 `Risorse/Manuale scrittura.pdf` – guida alla redazione del report  
-- 🧾 `Risorse/Lista tutorial disponibili.docx` – elenco dei materiali integrativi  
+- 🧾 `Risorse/Lista tutorial disponibili.docx` – elenco dei video tutorials 
 - 🧱 `Source_files_Latex/` – template completo in LaTeX per la relazione tecnica
 
 ---

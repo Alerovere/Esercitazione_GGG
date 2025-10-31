@@ -1,116 +1,147 @@
-# 🌊 Esercitazione GGG — Wave Runup e rilievo fotogrammetrico costiero
+# 🌊 Esercitazione “Wave Runup e rilievo fotogrammetrico costiero”  
+### Repository per docenti e tutor universitari
 
-## 📘 Descrizione generale
+## 🎯 Scopo della repository
 
-Questa repository contiene tutti i materiali per l’esercitazione **“Analisi del runup ondoso e rilievo fotogrammetrico della spiaggia di Borghetto S. Spirito (SV)”**, pensata per corsi di **Scienze Ambientali** (livello Laurea Triennale, II anno).  
-L’esercitazione è concepita come un’attività **learn-by-doing**: le studentesse e gli studenti lavorano come in una piccola commessa professionale, seguendo un *capitolato tecnico* e producendo un *report tecnico scientifico* finale.
+Questa repository fornisce a docenti e tutor un **pacchetto completo di esercitazione integrata** per corsi universitari di **Scienze Ambientali, Geomorfologia costiera, Ingegneria marittima o Geografia fisica**.
 
-Tutti i dati, notebook e modelli sono compatibili con **Google Colaboratory** e con software GIS come **QGIS**.
+L’attività è stata progettata come **simulazione realistica di incarico tecnico**: gli studenti si trovano a operare come un gruppo di consulenza incaricato di stimare l’ingressione del runup costiero durante un evento di mareggiata estrema.  
 
----
-
-## 🎯 Obiettivi formativi
-
-- Introdurre le basi della **modellazione del runup ondoso** su spiagge sabbiose.  
-- Applicare metodi di **fotogrammetria da drone** per la ricostruzione del DEM e dell’ortofoto.  
-- Sviluppare capacità di **analisi critica dei risultati**, collegando teoria e osservazioni.  
-- Produrre un **report tecnico-scientifico** in stile professionale, seguendo linee guida di scrittura.
+Il progetto unisce componenti **teoriche**, **pratiche** e **comunicative**, sviluppando competenze quantitative e professionali.
 
 ---
 
-## 📂 Struttura della repository
+## 🧩 Struttura della repository
 
 ```text
-├── Capitolato Tecnico.pdf         → documento principale con le specifiche operative dell’esercitazione
-├── LICENSE                        → licenza open source del materiale
-├── Ortofoto e DEM/                 → prodotti del rilievo fotogrammetrico
+├── Capitolato Tecnico.pdf          → Documento ufficiale della “commessa”: specifiche operative e criteri di valutazione
+├── LICENSE                         → Licenza d’uso open source (CC BY-NC-SA 4.0)
+├── Ortofoto e DEM/                 → Materiali del rilievo fotogrammetrico (Borghetto S. Spirito)
 │   ├── Digital_Elevation_Model.tif
 │   ├── Ortofotomosaico.tif
 │   ├── Rapporto tecnico drone.pdf
 │   └── Report di elaborazione.pdf
-├── Source_files_Latex/             → sorgenti LaTeX per il report fotogrammetrico e il capitolato tecnico
+├── Presentazione_per_studenti.docx → Breve introduzione motivazionale e istruzioni operative per la classe
+├── README.md                       → Documento di riferimento per i docenti
+├── Risorse/
+│   ├── Lista tutorial disponibili.docx → Elenco e link ai video tutorial (Colab, QGIS, scrittura tecnica)
+│   └── Manuale scrittura.pdf          → Linee guida per la redazione del report tecnico-scientifico
+├── Source_files_Latex/
 │   ├── Report rilievo fotogrammetrico/
-│   │   ├── main.tex, tau.cls, tauenvs.sty, tau.bib, etc.
-│   └── capitolato_tecnico.tex
-└── Wave_Runup/                     → esercitazione su modelli empirici di runup
-├── Dati_originali/
-│   ├── Tide_Gauge.csv
-│   └── Wave_buoy.csv
-└── wave_runup_model.ipynb      → notebook da aprire in Google Colab
+│   │   ├── main.tex, tau.cls, tauenvs.sty, tau.bib → Template completo in LaTeX del report tecnico
+│   └── capitolato_tecnico.tex          → Sorgente LaTeX del documento principale (per eventuali adattamenti)
+└── Wave_Runup/
+    ├── Dati_originali/
+    │   ├── Tide_Gauge.csv
+    │   └── Wave_buoy.csv
+    └── wave_runup_model.ipynb          → Notebook didattico per l’analisi del runup in Google Colaboratory
 ```
 
----
+## 📘 Contenuti e approccio didattico
 
-## 🧩 Come usare i materiali
+L’esercitazione è costruita per favorire un apprendimento **attivo e realistico**, ispirato alle dinamiche di una **commessa professionale**.  
+Gli studenti lavorano come consulenti incaricati di analizzare un evento di mareggiata e stimarne il runup massimo, utilizzando dati reali e strumenti scientifici.
 
-### 🔹 1. Preparazione su Google Drive e Colaboratory
-1. Scaricare la cartella `Wave_Runup.zip` o la cartella `Dati_originali` dalla repository.  
-2. Decomprimere i file e caricarli in una cartella personale di Google Drive.  
-3. Aprire il notebook `wave_runup_model.ipynb` su **Google Colaboratory**.  
-4. Seguire le istruzioni e i commenti in Markdown nel notebook per completare l’analisi.
+### 🔹 Struttura del percorso
 
-> 💡 Tutto ciò che serve per svolgere l’esercitazione è nel *capitolato tecnico*.
+L’attività si articola in quattro componenti principali:
 
----
+1. **Documentazione tecnica**
+   - Il documento *Capitolato Tecnico* costituisce l’unico riferimento ufficiale, come in un incarico reale.
+   - Include obiettivi, tempistiche, criteri di valutazione e regole operative.
+   - Nessuna istruzione aggiuntiva viene fornita al di fuori del capitolato, per stimolare autonomia e capacità di interpretazione.
 
-### 🔹 2. Analisi e risultati
-Nel notebook vengono implementati diversi **modelli empirici di runup**.  
-Gli studenti sono guidati a confrontare i risultati, produrre grafici e infine selezionare un valore rappresentativo di runup da **mappare in QGIS** sul DEM o sull’ortofoto.
+2. **Analisi dati e modellazione**
+   - Il notebook `wave_runup_model.ipynb` guida passo-passo gli studenti nella lettura dei dati e nell’applicazione di diversi modelli empirici di runup.
+   - Le celle in Markdown forniscono spiegazioni teoriche e richiami alle basi di programmazione in Python e all’uso di Colaboratory.
+   - L’analisi si conclude con la selezione di un valore rappresentativo di runup per la mappatura GIS.
 
-L’output finale previsto è una **relazione tecnica di max 5 pagine**, inclusa bibliografia.
+3. **Geoprocessing e rappresentazione spaziale**
+   - I risultati quantitativi ottenuti dal notebook vengono integrati in **QGIS** utilizzando il DEM e l’ortofoto del rilievo fotogrammetrico.
+   - Gli studenti producono una **mappa di rischio costiero**, individuando le aree soggette a potenziale inondazione.
 
----
-
-## 🧾 Materiali di supporto
-
-- 📄 **Capitolato tecnico** → regole e specifiche operative dell’esercitazione.  
-- 📘 **Manuale di scrittura tecnico-scientifica** → [link da aggiungere qui]  
-- 🎥 **Video tutorial Colaboratory e QGIS** → [link da aggiungere qui]  
-- 📎 **Esempi di report fotogrammetrici e runup** → cartella `Source_files_Latex/`
-
----
-
-## 🧑‍🏫 Per i docenti
-
-Questa esercitazione è pensata per essere facilmente **adottabile in altri corsi** di geomorfologia costiera, geografia fisica o modellazione ambientale.  
-Ogni componente (dati, notebook, testi) è riutilizzabile sotto licenza aperta.
-
-### Adattabilità:
-- Il notebook `wave_runup_model.ipynb` è interamente commentato e modificabile.  
-- I file `.tif` del rilievo fotogrammetrico possono essere sostituiti da dati propri.  
-- Il *capitolato tecnico* fornisce un modello replicabile di esercitazione basata su commessa.
+4. **Comunicazione tecnico–scientifica**
+   - L’esercitazione si conclude con la redazione di un **report tecnico** (max 5 pagine), seguendo il *Manuale di scrittura tecnico-scientifica* incluso nella cartella `Risorse/`.
+   - Il report deve essere strutturato in modo coerente, tracciabile e basato su dati quantitativi.
+   - È fornito anche un **template LaTeX** completo (`Source_files_Latex/`) per i corsi che desiderano introdurre elementi di scrittura scientifica tipografica.
 
 ---
 
-## 🧠 Suggerimento didattico
+### 🎓 Competenze sviluppate
 
-L’esercitazione funziona al meglio se gli studenti lavorano in piccoli gruppi (2–3 persone), condividendo file e notebook su Google Drive.  
-La discussione dei risultati e la redazione del report tecnico sono parti fondamentali dell’apprendimento.
-
----
-
-## ⚙️ Requisiti tecnici
-
-- Google Account con accesso a **Colaboratory**  
-- **QGIS ≥ 3.30** (solo per la parte di mappatura)  
-- Browser aggiornato (Chrome o Firefox consigliati)  
+| Area di competenza | Obiettivi formativi specifici |
+|---------------------|--------------------------------|
+| **Analisi costiera** | Applicare e confrontare modelli empirici di runup in contesti reali |
+| **Fotogrammetria** | Comprendere il flusso di lavoro di acquisizione e generazione di ortofoto e DEM |
+| **GIS e rappresentazione spaziale** | Visualizzare e interpretare i risultati in ambiente QGIS |
+| **Comunicazione tecnico-scientifica** | Redigere relazioni tecniche chiare, sintetiche e verificabili |
+| **Soft skills professionali** | Lavorare in gruppo, gestire scadenze e responsabilità in autonomia |
 
 ---
 
-## 📄 Licenza
+### 💡 Filosofia didattica
 
-Questo materiale è distribuito sotto licenza **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.  
-È consentito riutilizzarlo e modificarlo per fini didattici, citando la fonte.
-
----
-
-## 📬 Contatti
-
-**Autore:** Alessio Rovere  
-**Affiliazione:** GeoDrone s.r.l. – Via Torino 155, 30172 Venezia  
-**Email:** [aggiungere email accademica o di riferimento]
+> “Tutto ciò che serve è già nel capitolato tecnico.”  
+>  
+> L’esercitazione spinge gli studenti a **leggere, comprendere e tradurre un problema reale** in un approccio quantitativo.  
+> L’obiettivo non è solo ottenere un risultato numerico, ma **adottare un metodo professionale** basato su dati, rigore e collaborazione.
 
 ---
 
-> _Questa repository nasce come supporto all’apprendimento attivo nelle scienze ambientali.  
-> L’obiettivo è far vivere agli studenti un’esperienza di progetto reale, con strumenti e metodi professionali._
+### 🧭 Output finale atteso
+
+- Notebook completato e commentato su Google Colaboratory  
+- Mappa di inondazione costiera in QGIS  
+- Relazione tecnica in formato `.pdf` (max 5 pagine, con bibliografia)  
+
+---
+
+### 📎 Materiali di supporto
+
+- 📄 `Capitolato Tecnico.pdf` – documento ufficiale della commessa  
+- 🎞️ *Playlist video tutorial* (Colab, QGIS, scrittura tecnica) → [link da aggiungere]  
+- 📘 `Risorse/Manuale scrittura.pdf` – guida alla redazione del report  
+- 🧾 `Risorse/Lista tutorial disponibili.docx` – elenco dei materiali integrativi  
+- 🧱 `Source_files_Latex/` – template completo in LaTeX per la relazione tecnica
+
+## 🎯 Obiettivi formativi
+
+L’esercitazione è progettata per sviluppare competenze tecniche, metodologiche e trasversali coerenti con i profili formativi dei corsi di **Scienze Ambientali** e discipline affini.  
+L’obiettivo non è solo applicare formule o strumenti, ma **ragionare come professionisti** che devono produrre risultati affidabili, tracciabili e comunicabili.
+
+---
+
+### 🔹 Competenze disciplinari
+
+| Ambito | Obiettivi specifici |
+|---------|--------------------|
+| **Oceanografia e dinamica costiera** | Comprendere i meccanismi di runup e setup durante eventi di mareggiata estrema. |
+| **Analisi ambientale quantitativa** | Applicare modelli empirici per stimare l’inondazione costiera e valutarne l’incertezza. |
+| **Telerilevamento e fotogrammetria** | Utilizzare dati da rilievo drone per derivare ortofoto e modelli digitali del terreno (DEM). |
+| **GIS e cartografia tematica** | Integrare dati raster e vettoriali per produrre mappe di rischio costiero. |
+| **Scrittura tecnico-scientifica** | Redigere un report sintetico e verificabile, utilizzando terminologia e convenzioni professionali. |
+
+---
+
+### 🔹 Competenze trasversali
+
+| Area | Obiettivi formativi |
+|------|----------------------|
+| **Autonomia operativa** | Organizzare e gestire un progetto tecnico a partire da un documento di incarico. |
+| **Collaborazione** | Lavorare in gruppo, distribuendo ruoli e responsabilità in modo efficace. |
+| **Problem solving** | Identificare criticità nei dati e proporre soluzioni coerenti con i vincoli tecnici. |
+| **Comunicazione scientifica** | Presentare risultati con grafici, mappe e testo chiaro e tracciabile. |
+| **Etica professionale** | Rispettare i principi di trasparenza, citazione delle fonti e correttezza metodologica. |
+
+---
+
+### 💬 In sintesi
+
+> L’obiettivo formativo principale è far vivere agli studenti un’esperienza **autentica di lavoro tecnico-scientifico**, dove la conoscenza teorica è messa alla prova in un contesto realistico e interdisciplinare.
+
+Alla fine dell’attività, ogni studente sarà in grado di:
+
+- leggere e interpretare un **capitolato tecnico** come base operativa di un incarico;
+- elaborare dati reali in ambiente **Python/Colaboratory**;
+- integrare risultati quantitativi in **QGIS**;
+- comunicare i propri risultati con un **report professionale** conforme agli standard tecnico-scientifici.

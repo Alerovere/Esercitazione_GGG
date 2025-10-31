@@ -65,7 +65,6 @@ L’attività si articola in quattro componenti principali:
 4. **Comunicazione tecnico–scientifica**
    - L’esercitazione si conclude con la redazione di un **report tecnico** (max 5 pagine), seguendo il *Manuale di scrittura tecnico-scientifica* incluso nella cartella `Risorse/`.
    - Il report deve essere strutturato in modo coerente, tracciabile e basato su dati quantitativi.
-   - È fornito anche un **template LaTeX** completo (`Source_files_Latex/`) per i corsi che desiderano introdurre elementi di scrittura scientifica tipografica.
 
 ---
 

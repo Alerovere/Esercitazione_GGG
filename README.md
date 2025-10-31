@@ -20,7 +20,8 @@ Tutti i dati, notebook e modelli sono compatibili con **Google Colaboratory** e 
 
 ## 📂 Struttura della repository
 
-```├── Capitolato Tecnico.pdf         → documento principale con le specifiche operative dell’esercitazione
+```text
+├── Capitolato Tecnico.pdf         → documento principale con le specifiche operative dell’esercitazione
 ├── LICENSE                        → licenza open source del materiale
 ├── Ortofoto e DEM/                 → prodotti del rilievo fotogrammetrico
 │   ├── Digital_Elevation_Model.tif
@@ -35,7 +36,8 @@ Tutti i dati, notebook e modelli sono compatibili con **Google Colaboratory** e 
 ├── Dati_originali/
 │   ├── Tide_Gauge.csv
 │   └── Wave_buoy.csv
-└── wave_runup_model.ipynb      → notebook da aprire in Google Colab```
+└── wave_runup_model.ipynb      → notebook da aprire in Google Colab
+```
 
 ---
 

@@ -1,0 +1,213 @@
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}      
+\usepackage[italian]{babel}
+
+
+
+\moderncvstyle{classic}                            
+\moderncvcolor{green}                            
+
+% character encoding
+\usepackage[utf8]{inputenc}                     
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{Alessio}{Rovere}
+\name{GeoMarine Solutions s.r.l.}{}
+\email{alessio.rovere@unive.it} 
+\address{Via delle Aegue Marse 1 – 17200 Roccapepe a mare (GE)}
+
+
+\begin{document}
+
+\recipient{A:}{Gruppo di ricerca Ambientale \\ Corso di Geografia Fisica e Geomorfologia}
+\date{\today}
+
+\makelettertitle
+
+\noindent
+\textbf{Oggetto:} \textit{Incarico per la valutazione della massima ingressione del runup costiero nel litorale di Borghetto Santo Spirito (SV)} \\[0.5em]
+
+\noindent
+\textbf{Venezia, \today} \\[1em]
+
+Alla cortese attenzione del gruppo di consulenza ambientale, \\[0.5em]
+
+La società \textbf{GeoMarine Engineering s.r.l.} rappresentata dal Prof. Alessio Rovere (in seguito definito "committente"), nell’ambito delle proprie attività di supporto tecnico al \textbf{Comune di Borghetto Santo Spirito (SV)}, le conferisce con la presente l’incarico di elaborare una \textbf{valutazione della massima ingressione del runup costiero} durante un evento di mareggiata estrema.
+
+\section*{1. Scopo dell’incarico}
+Il presente incarico si inserisce nell’ambito delle attività promosse dal Comune di Borghetto Santo Spirito (SV) per il miglioramento della \textbf{resilienza costiera a eventi meteoromarini estremi} e per la predisposizione di \textbf{mappe di rischio e vulnerabilità} da utilizzare come supporto alla pianificazione territoriale e alla gestione delle emergenze.
+
+L’obiettivo dell’attività è la \textbf{valutazione quantitativa della massima ingressione del runup costiero} lungo la fascia litoranea comunale, mediante l’applicazione di un \textbf{ensemble di modelli empirici di runup} su dati di riferimento forniti, relativi ad una mareggiata estrema selezionata dalla ditta incaricata, con opportuna giustificazione della scelta.
+
+L’analisi dovrà consentire di individuare le aree potenzialmente soggette a \textbf{inondazione costiera durante eventi di mareggiata estrema}.
+
+I risultati dovranno essere presentati in forma di \textbf{relazione tecnica}, corredati da una \textbf{mappa di inondazione potenziale} causata dal runup durante l'evento estremo selezionato, dalla discussione critica dei valori stimati e delle principali incertezze del metodo.  
+
+Le informazioni prodotte potranno contribuire alla definizione di strumenti di pianificazione costiera, alla valutazione del rischio per le infrastrutture e al supporto delle strategie di adattamento locale ai cambiamenti climatici.
+
+\clearpage
+
+\section*{2. Dati e materiale di riferimento}
+Per lo svolgimento dell’incarico saranno resi disponibili tutti i materiali necessari all’elaborazione e alla rappresentazione dei risultati, attraverso una repository dedicata reperibile su \underline{\href{https://github.com/Alerovere/Esercitazione_GGG.git}{questa pagina}}
+
+Il materiale comprende:
+\begin{itemize}
+  \item un \textbf{Digital Elevation Model (DEM) e una Ortofotografia} dell’area di studio ottenute da survey UAS, con risoluzione adeguata alla scala dell’analisi costiera. Sono fornite relazioni relative all'acquisizione di questi dati.
+  \item un \textbf{notebook Jupyter (python)} contenente celle per scaricare i dati di onda, i modelli empirici di runup, le funzioni di calcolo ed esempi di visualizzazione dei risultati.
+  \item \textbf{dati GNSS} relativi ad un evento di runup avvenuto tra il 9 e il 12 maggio 2026 sul litorale di Borghetto S.S.
+\end{itemize}
+
+Tutti i file forniti dovranno essere utilizzati esclusivamente come \textbf{base di lavoro per l’elaborazione e la mappatura del runup}, senza ulteriori modifiche ai dataset originali.
+
+\section*{3. Attività richieste}
+Il gruppo di consulenza è incaricato dal committente di svolgere le attività elencate di seguito, seguendo le istruzioni contenute nel materiale fornito e nella presente lettera di incarico.  \\[1em]
+
+\begin{enumerate}
+  \item \textbf{Calcolo del runup costiero.}  
+  Utilizzare il \textbf{notebook Jupyter fornito} per calcolare i valori di \textit{runup massimo} attraverso l’applicazione di un \textbf{ensemble di modelli empirici} disponibili nel codice.  
+  I risultati numerici dovranno essere verificati e, se necessario, confrontati con le formule di riferimento citate nel notebook e valutatati criticamente in seguito all'analisi dei dati GNSS raccolti sul campo e forniti dal committente.
+  \item \textbf{Elaborazione e rappresentazione cartografica.}  
+  Utilizzare i valori di runup ottenuti per l'evento estremo selezionato per generare, tramite \textbf{QGIS} o software equivalente, una o più mappe delle aree potenzialmente soggette a \textbf{inondazione costiera}.  
+
+  \item \textbf{Redazione della relazione tecnica.}  
+  Preparare una relazione sintetica (massimo 5 pagine, bibliografia esclusa) secondo lo schema seguente:
+  \begin{itemize}
+    \item \textbf{Introduzione} – contesto generale, obiettivi, e riferimenti bibliografici scientifico-tecnici sulle dinamiche costiere dell’area di studio;
+    \item \textbf{Area di studio} – descrizione del contesto geografico e geomorfologico, con una mappa realizzata in QGIS;
+    \item \textbf{Metodi e dati} – spiegazione delle formule di runup utilizzate e dei dati di input, con relative citazioni; 
+    \item \textbf{Risultati e discussione} – presentazione dei risultati (anche attraverso mappature ad hoc) e valutazione critica delle incertezze;
+    \item \textbf{Conclusioni e raccomandazioni} – considerazioni sul rischio costiero e possibili misure di mitigazione.
+  \end{itemize}
+\end{enumerate}
+
+  La relazione dovrà essere redatta in stile tecnico–scientifico e corredata da citazioni in testo e da una bibliografia finale coerente con gli standard accademici.
+
+\clearpage
+
+\section*{4. Consegna e tempistiche}
+Lo svolgimento dell’attività e la consegna della relazione tecnica seguiranno la seguente pianificazione:
+
+\begin{itemize}
+  \item \textbf{Novembre - Dicembre 2026 – Lavoro guidato}  
+  In questi mesi, il gruppo di lavoro prenderà familiarità con gli strumenti, guidato durante brevi in classe e tramite tutorials online per la risoluzione di problemi con software e altre domande.   
+  \item \textbf{30 Novembre e 14 Dicembre 2026 – Sessioni di lavoro.}  
+  Durante queste due giornate (6 ore ciascuna) i gruppi lavoreranno sul proprio elaborato, potendo interagire direttamente con il committente per domande tecniche, chiarimenti metodologici o revisione parziale dei risultati.  
+  \item \textbf{15 dicembre 2026 – Consegna della relazione preliminare (entro le ore 23:59).}  
+  Ogni gruppo dovrà caricare su \textbf{piattaforma Moodle} una prima versione completa della relazione tecnica in formato PDF.  
+  \textbf{Non sono ammesse consegne via e-mail o attraverso altri canali.}  
+  La versione preliminare sarà oggetto di discussione e revisione nella fase successiva.
+
+  \item \textbf{21 dicembre 2026 – Revisione e discussione guidata.}  
+  Nel corso della giornata, i gruppi presenteranno sinteticamente il proprio elaborato e riceveranno indicazioni mirate per il miglioramento della relazione, con particolare attenzione alla coerenza metodologica, all’uso dei modelli di runup e alla qualità della rappresentazione cartografica.
+
+  \item \textbf{15 gennaio 2027 – Consegna finale (entro le ore 23:59).}  
+  La versione definitiva della relazione dovrà essere caricata obbligatoriamente su \textbf{Moodle} entro questo termine, come \textbf{file PDF unico per gruppo}.  
+  Dopo tale scadenza, \textbf{ogni giorno di ritardo comporterà la sottrazione di 1 punto} dal punteggio finale assegnato all’elaborato.
+\end{itemize}
+
+\textbf{Le richieste di feedback o aiuto potranno essere formulate esclusivamente durante le sessioni in classe.}  Eventuali richieste via e-mail non verranno prese in considerazione, al fine di garantire equità tra tutti i gruppi di lavoro.
+
+Si ricorda che \textbf{non saranno accettate consegne via e-mail} ma solo tramite la piattaforma Moodle.  
+
+La consegna oltre i termini stabiliti comporterà automaticamente l’applicazione delle penalità previste.  
+
+\section*{5. Proprietà intellettuale e originalità}
+La relazione tecnica dovrà essere \textbf{interamente originale} e redatta autonomamente dal gruppo incaricato.  
+Ogni utilizzo di testi, dati, figure o mappe provenienti da altre fonti dovrà essere accompagnato da una \textbf{citazione esplicita in testo} e da un corretto riferimento bibliografico nel formato indicato nel \textit{Manuale di scrittura tecnico–scientifica} disponibile nella pagina Moodle del corso.
+
+Tutti i contenuti dovranno rispettare le buone pratiche di redazione tecnica, che comprendono:
+\begin{itemize}
+  \item l’utilizzo di un linguaggio \textbf{chiaro, sintetico e privo di ambiguità};
+  \item la \textbf{strutturazione logica} del testo in sezioni coerenti con il metodo scientifico (introduzione, materiali e metodi, risultati, discussione, conclusioni);
+  \item la \textbf{presentazione accurata delle figure e delle tabelle}, con didascalie complete e riferimenti nel testo;
+  \item la corretta indicazione delle \textbf{unità di misura, scale e coordinate} nelle rappresentazioni cartografiche;
+  \item la \textbf{tracciabilità delle fonti} di dati, immagini o citazioni, garantendo la trasparenza e la verificabilità del lavoro svolto.
+\end{itemize}
+
+Sono espressamente vietati il \textbf{plagio}, la riproduzione non autorizzata di materiale di terzi o il riutilizzo di elaborati provenienti da altri gruppi o anni accademici.  
+La violazione di tali norme comporterà la \textbf{nullità dell’incarico e la valutazione automatica di insufficienza}.
+
+Si raccomanda di utilizzare gli strumenti indicati nel manuale per il controllo della coerenza testuale e delle citazioni bibliografiche, e di verificare la qualità formale dell’elaborato prima della consegna.
+
+\section*{6. Divieto di subappalto e responsabilità}
+Il presente incarico è conferito in via esclusiva al gruppo di consulenza assegnato e \textbf{non può essere subappaltato, delegato o condiviso} con soggetti esterni al gruppo.  
+Ogni componente del gruppo è responsabile in solido della correttezza, completezza e originalità dell'intero lavoro. Eventuali inadempienze di membri del gruppo di lavoro dovranno essere segnalate tempestivamente al committente.
+
+Non è consentita la collaborazione con altri gruppi o con persone non iscritte al corso, né lo scambio di codici, dati, elaborati o grafici prodotti nell’ambito dell’attività.  Tali restrizioni mirano a garantire \textbf{pari condizioni di lavoro e valutazione} per tutte le studentesse e tutti gli studenti coinvolti.
+
+Eventuali collaborazioni esterne — ad esempio, per l’uso di dati o riferimenti aggiuntivi provenienti da enti o progetti scientifici — dovranno essere \textbf{esplicitamente dichiarate e approvate} dal committente prima della consegna della relazione finale.
+
+Fatto salvo ove diversamente indicato dalle licenze di utilizzo, i materiali forniti nella repository di progetto sono di uso strettamente didattico e non possono essere utilizzati o ridistribuiti per fini diversi da quelli previsti dall’incarico.  Il riutilizzo di tali materiali in altri contesti richiede il consenso scritto del committente o del titolare dei diritti.
+
+La violazione di una o più di queste condizioni potrà comportare la \textbf{revoca dell’incarico} e l’attribuzione di una valutazione negativa, indipendentemente dalla qualità tecnica dell’elaborato consegnato.
+
+\section*{7. Criteri di valutazione tecnica}
+La valutazione del lavoro sarà effettuata in base a criteri tecnico–scientifici e formali, volti a premiare la qualità metodologica, la chiarezza espositiva e la coerenza complessiva dell’elaborato. Il punteggio complessivo massimo attribuibile è di \textbf{30 punti}, che concorrerà alla determinazione del voto finale dell’esercitazione. La lode verrà assegnata in presenza di analisi aggiuntive proposte o di elaborati di qualità particolarmente elevata, giudicata dal committente.
+
+I principali criteri di valutazione sono i seguenti:
+
+\begin{itemize}
+  \item \textbf{Contenuto scientifico e metodologico} – correttezza nell’applicazione dei modelli di runup, qualità dei dati utilizzati e coerenza dei risultati con gli obiettivi dell’incarico;
+  \item \textbf{Introduzione e inquadramento bibliografico} – capacità di contestualizzare il lavoro rispetto alla letteratura scientifica e ai rapporti tecnici disponibili, includendo riferimenti pertinenti e aggiornati;
+  \item \textbf{Chiarezza e struttura della relazione} – organizzazione logica del testo, uso di un linguaggio tecnico appropriato, coerenza tra sezioni e fluidità nella presentazione dei risultati;
+  \item \textbf{Qualità grafica e cartografica} – accuratezza delle figure e delle mappe prodotte, presenza di legenda, scala, coordinate e didascalie esplicative; leggibilità e pertinenza delle rappresentazioni;
+  \item \textbf{Capacità di analisi e discussione critica} – interpretazione consapevole dei risultati, riconoscimento dei limiti metodologici e delle incertezze, formulazione di raccomandazioni operative;
+  \item \textbf{Originalità e correttezza delle fonti} – rispetto delle buone pratiche di citazione, assenza di plagio e uso corretto dei dati e materiali forniti;
+  \item \textbf{Rispetto delle tempistiche e delle istruzioni operative} – puntualità nelle consegne, conformità al formato richiesto e osservanza delle regole del presente incarico.
+\end{itemize}
+
+Un elaborato potrà essere considerato \textbf{insufficiente} qualora presenti gravi errori metodologici, carenze nella bibliografia o nella rappresentazione dei risultati, oppure in caso di plagio o mancata attribuzione delle fonti. L'uso di strumenti AI è consentito solo nel rispetto delle "Linee Guida per l’uso responsabile dell’IA generativa nel campo della didattica e dell’apprendimento" stilato dall'Università Ca' Foscari di Venezia e disponibile a \underline{\href{https://www.unive.it/pag/fileadmin/user_upload/ateneo/norme_regolamenti/regolamenti/servizi-informatici/Linee_Guida_IA_Didattica.pdf}{questa pagina}}
+
+\section*{8. Corrispettivo, condizioni e valore formativo}
+Il presente incarico rientra tra le attività previste dal corso universitario \textit{Geografia Fisica e Geomorfologia} del Corso di Laurea in Scienze Ambientali dell’\textbf{Università Ca’ Foscari Venezia}, a.a. 2026/2027.
+  
+Si tratta di una \textbf{simulazione didattica} che riproduce un incarico tecnico reale, finalizzata allo sviluppo di competenze operative, analitiche e comunicative nel campo della geomorfologia costiera.
+
+Non è previsto alcun \textbf{corrispettivo economico}, trattandosi di attività formativa obbligatoria. Tuttavia, la qualità dell’elaborato e il rispetto delle specifiche tecniche e metodologiche incideranno direttamente sulla \textbf{valutazione complessiva dell’esercitazione}, che contribuirà per \textbf{un terzo (1/3) al voto finale del corso}.
+
+L’attività mira a fornire agli studenti e alle studentesse l’opportunità di:
+\begin{itemize}
+  \item applicare conoscenze teoriche alla \textbf{risoluzione di un problema tecnico reale}, con riferimento alla gestione del rischio costiero;
+  \item sperimentare strumenti digitali di analisi e modellazione (Jupyter Notebook, QGIS, GitHub);
+  \item produrre un elaborato tecnico conforme agli \textbf{standard professionali di ingegneria costiera e ambientale};
+  \item sviluppare capacità di \textbf{lavoro di gruppo, organizzazione e comunicazione scientifica}.
+\end{itemize}
+
+Il lavoro svolto e i risultati conseguiti resteranno di esclusiva proprietà didattica del corso e potranno essere utilizzati a fini di documentazione o presentazione accademica, nel rispetto della normativa vigente in materia di diritti d’autore.
+
+Si invita ogni gruppo di lavoro a considerare l’attività non solo come un esercizio accademico, ma come una \textbf{simulazione realistica di consulenza tecnica ambientale}, in cui accuratezza, chiarezza e rispetto delle procedure costituiscono parte integrante della valutazione finale.  
+
+\vspace{1em}
+Il committente a disposizione per eventuali chiarimenti tecnici o metodologici durante lo svolgimento dell’attività.
+
+\vspace{1em}
+Distinti saluti, \\[1em]
+\textbf{Dott. Alessio Rovere} \\
+\textit{Responsabile tecnico – GeoMarine Solutions s.r.l.} \\[5em]
+
+
+Per accettazione,
+Il Gruppo di lavoro\\[1.5em]
+
+Inserire nome del gruppo di lavoro \\[2.5em]
+\rule{10cm}{0.7pt}\\[2.5em]
+
+
+Componenti del gruppo di lavoro
+Nome, Cognome, N. Matricola\\[2.5em]
+
+\rule{12cm}{0.7pt}\\[2.5em]
+
+\rule{12cm}{0.7pt}\\[2.5em]
+
+\rule{12cm}{0.7pt}\\[2.5em]
+
+\rule{12cm}{0.7pt}\\[2.5em]
+
+
+
+\end{document}

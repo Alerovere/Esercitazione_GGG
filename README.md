@@ -1,4 +1,4 @@
-# 🌊 Esercitazione — Wave Runup e rilievo fotogrammetrico costiero
+# 🌊 Esercitazione — Wave Runup
 
 **Corso di Geografia Fisica e Geomorfologia — Laurea in Scienze Ambientali, Università Ca' Foscari Venezia (a.a. 2026/2027)**
 

@@ -1,4 +1,4 @@
-# 🌊 Esercitazione — Wave Runup
+# 🌊 Esercitazione — Wave Runup e rilievo fotogrammetrico costiero
 
 **Corso di Geografia Fisica e Geomorfologia — Laurea in Scienze Ambientali, Università Ca' Foscari Venezia (a.a. 2026/2027)**
 
@@ -21,14 +21,16 @@ L'unico riferimento operativo per gli studenti è il **Capitolato Tecnico** incl
 ├── Dati GNSS/                          → Rilievo RTK-GNSS del 12 maggio 2026, relativo alla mareggiata del 9-12 maggio 2026
 │   ├── Punti_Sensibili_runup.csv         (punti di interesse/vulnerabilità sulla spiaggia)
 │   ├── Runup_GNSS.csv                    (punti raggiunti dal runup durante l'evento)
-│   └── Transetto_GNSS.csv                (transetto topografico della spiaggia)
+│   ├── Transetto_GNSS.csv                (transetto topografico della spiaggia)
+│   └── README_Dati_GNSS.pdf              (descrizione dei tre file: contenuto, uso previsto, sistema di riferimento)
 ├── Ortofoto e DEM/                     → Rilievo fotogrammetrico da drone dell'area di studio
 │   ├── Digital_Elevation_Model.tif
 │   ├── Ortofotomosaico.tif
 │   ├── Rapporto tecnico drone.pdf
 │   └── Report di elaborazione.pdf
 ├── Risorse/
-│   └── Manuale di Scrittura.pdf        → Linee guida per la redazione tecnico-scientifica del report
+│   ├── Manuale di Scrittura.pdf         → Linee guida per la redazione tecnico-scientifica del report
+│   └── Bibliografia_di_riferimento.pdf  → Riferimenti scientifici sulla geomorfologia costiera dell'area e sul monitoraggio da drone
 ├── Wave_Runup/
 │   └── esercitazione_wave_runup_costiero.ipynb  → Notebook (Google Colab) per il calcolo del runup
 ├── LICENSE                             → Licenza MIT
@@ -51,13 +53,13 @@ Il notebook (da eseguire su Google Colab) guida gli studenti attraverso:
 - calcolo del runup con un **ensemble di 8 modelli empirici** (Stockdon et al. 2006, Vousdoukas et al. 2012, Holman 1986, Nielsen 2009, Ruggiero et al. 2001, Atkinson et al. 2017, Senechal et al. 2011, Passarella et al. 2018), tramite il pacchetto `py-wave-runup`;
 - confronto statistico tra i modelli (istogrammi, percentili) e selezione di un valore rappresentativo di runup.
 
-I dati raccolti in campo nella cartella `Dati GNSS/` (relativi alla stessa mareggiata, 9–12 maggio 2026) possono essere usati per verificare/confrontare criticamente i valori stimati dai modelli empirici.
+I dati raccolti in campo nella cartella `Dati GNSS/` (relativi alla stessa mareggiata, 9–12 maggio 2026) possono essere usati per verificare/confrontare criticamente i valori stimati dai modelli empirici — vedi `Dati GNSS/README_Dati_GNSS.pdf` per la descrizione dei tre file e indicazioni sul loro uso.
 
 **2. Geoprocessing e mappatura — QGIS**
 Utilizzando il DEM e l'ortofoto in `Ortofoto e DEM/` e il valore di runup scelto, gli studenti producono in QGIS una mappa delle aree potenzialmente soggette a inondazione costiera.
 
 **3. Relazione tecnica**
-Redazione di un report tecnico-scientifico (max 5 pagine, bibliografia esclusa), strutturato in Introduzione, Area di studio, Metodi e dati, Risultati e discussione, Conclusioni e raccomandazioni — secondo le linee guida in `Risorse/Manuale di Scrittura.pdf`.
+Redazione di un report tecnico-scientifico (max 5 pagine, bibliografia esclusa), strutturato in Introduzione, Area di studio, Metodi e dati, Risultati e discussione, Conclusioni e raccomandazioni — secondo le linee guida in `Risorse/Manuale di Scrittura.pdf`. Un primo nucleo di riferimenti bibliografici pertinenti all'area di studio e ai metodi impiegati è disponibile in `Risorse/Bibliografia_di_riferimento.pdf`, da integrare con ulteriori fonti reperite autonomamente.
 
 ---
 
